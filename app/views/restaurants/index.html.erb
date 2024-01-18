@@ -1,0 +1,12 @@
+
+
+
+
+
+
+<% @restaurants.map do |restaurant| %>
+  <p><%= render 'restaurants/restaurant',restaurant: restaurant %></p>
+  <p><%= link_to "visit this restaurant", restaurant_path(restaurant) %></p>
+<% end %>
+<hr>
+<p><%= link_to "add a new restaurant", new_restaurant_path %></p>

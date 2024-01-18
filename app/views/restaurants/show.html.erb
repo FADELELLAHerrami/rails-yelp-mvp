@@ -1,0 +1,11 @@
+
+
+
+
+
+<%= render "restaurant", restaurant: @restaurant  %>
+
+
+<%= link_to "Back to restaurants", restaurants_path %>
+<%= link_to "Edit", edit_restaurant_path(@restaurant) %>
+<%= link_to "delete", restaurants_path(@restaurant), data: { "turbo-method": :delete } %>
